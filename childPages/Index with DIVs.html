@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="author" content="Maxwell Li">
     <meta name="description" content="Learning HTML by building a simple website">
-    <meta name="keywords" content="Laying out, DIVs">
+    <meta name="keywords" content="boilerplate, starter code, HTML, learning">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Content give value for name or http-equiv attribute, text entry in string or array string -->
 
@@ -23,30 +23,46 @@
 
     <title>Maxwell's Super Cool Learning html Website</title>
 
+    <style>
+        /* This is a style comment */
+        div {border: thin dotted red;}
+    </style>
+
     <noscript>Running JavaScript is not necessary in the HTML Page ... FYI: your feature to execute scripts is turned off</noscript>
 
 </head>
 
 <body>
-    <header>This is the Laying out DIVs Page</header>
-    <nav>
-        Navigation
-        <ul> <!--Unordered List-->
-            <li><!--List Item--> This is the Laying out DIVs, <a href="https://slightlysoggy.github.io/sandbox_learninghtml.github.com/">Click Here To Return</a></li>
-        </ul>
-    </nav>
-    <aside>This is the aside space.</aside>
-    <section><article>This is a section and article.</article></section>
-    <section><article><p>This is a paragraph tag inside a section-article</p></article></section>
+    <div><header>Website to learn HTML</header></div>
+    <div><nav>
+        <header>Navigation</header>
+        <section>
+            <ul> <!--Unordered List-->
+                <li><!--List Item--> This is a child template page with example meta data, <a href="childPages/childTemplate.html">Click Here</a></li>
+                <li><!--List Item--> This is the Flex Box page, <a href="childPages/Flex Box.html">Click Here</a></li>
+                <li><!--List Item--> This is the Headings and Paragraph Tags with viewportpage, <a href="childPages/Headings and Paragraph Tags with viewport.html">Click Here</a></li>
+                <li><!--List Item--> This is the Headings and Paragraph Tags no viewportpage, <a href="childPages/Headings and Paragraph Tags no viewport.html">Click Here</a></li>
+                <li><!--List Item--> This is the Image Lessons page, <a href="childPages/Image Lesson.html">Click Here</a></li>
+                <li><!--List Item--> This is the Laying out DIVs page, <a href="childPages/Laying out DIVs.html">Click Here</a></li>
+                <li><!--List Item--> This is the Subs and Superscripts page, <a href="childPages/Subs and Superscript.html">Click Here</a></li>
+            </ul>
+        </section>
+    </nav></div>
+    <div><aside>This is the aside space.</aside></div>
+    <div><section><article>This is a section and article.</article></section></div>
+    <div><section><article><p>This is a paragraph tag inside a section-article</p></article></section></div>
 </body>
 
 <footer>
+    <div>
+    
     <blockquote cite="https://i.kym-cdn.com/photos/images/newsfeed/001/884/907/c86.jpg">
         <!-- Date Accessed - 20220706-->
     </blockquote>
-    <strong>"Eating an apple is totally not beyond unimaginably lame." - </strong>
+    <strong>"Eating an apple is beyond unimaginably lame." - </strong>
     <em><a href="https://i.kym-cdn.com/photos/images/newsfeed/001/884/907/c86.jpg" target="_blank">Maxwell Li</a></em>
     <p> &copy Maxwell Li, powered by SlightlySoggy in GitHub</p>
+    </div>
 </footer>
 
 </html>
