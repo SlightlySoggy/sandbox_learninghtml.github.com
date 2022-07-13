@@ -8,6 +8,9 @@
     <meta name="description" content="Learning HTML by building a simple website">
     <meta name="keywords" content="flexbox">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../base.css">
+    <link rel="stylesheet" href="../Assets/navbar.css">
+    
     <!-- Content give value for name or http-equiv attribute, text entry in string or array string -->
 
     <!-- meta http-equiv="default-style" content="" --> <!-- content matches css link exactly -->
@@ -21,22 +24,20 @@
     <!-- meta http-equiv="content-type" content="text/html; charset=UTF-8" -->
     <!-- Already specified in the charset above-->
 
-    <title>Maxwell's Super Cool Learning html Website</title>
-
     <style>
         div {border: thin line black;}
         * {box-sizing: border-box;}
-        .header {
+        .column1 {
             border: 1px solid red;
             padding: 15 px;
         }
-        .menu {
+        .column2 {
             width: 25%;
             float: left;
             padding: 15px;
             border: 1px solid red;
         }
-        .main {
+        .column3 {
             float: left;
             width:50%;
             padding: 15px;
@@ -48,44 +49,101 @@
             padding: 15 px;
             border: 1px solid red;
         }
-        .footer {
-            padding: 15px;
-            border: 1px solid red;
+
+
+
+        body {
+        text-align: center;
+        padding: 25px;
+        background: #161925;
+        color: rgb(255, 255, 255);
+        font-size: 25px;
+        font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #header {
+        text-align: center;
+        padding: 50px 0px 0px 0px;
+        margin: auto;
+        width: 25%;
+        color: #ffffff;
+        }
+
+        #footer {
+        color: #ffffff;
+        padding: 50px 0px 0px 0px;
+        width: 100%;
+        height: 150px;
+        background: #23395B;
+        border: 1px solid red;
+        }
+
+        .footer a, .footer a:visited {
+        color: #ffffff;
+        text-decoration: none;
         }
     </style>
+
+    <title>Maxwell's Super Cool Learning html Website</title>
 
     <noscript>Running JavaScript is not necessary in the HTML Page ... FYI: your feature to execute scripts is turned off</noscript>
 
 </head>
+    <body>
+        <div id="header">
+            <h1>Learning HTML Website</h1>
+            <p>Maxwell Li</p>
 
-<body>
-    <header>This is the Flex Box page</header>
-    <nav>Navigation</nav>
+            <h2 id="title1">FlexBox Page</h2>
+        </div>
+        <title>Maxwell's Super Cool Learning html Website</title>
+
         <section>
-            <ul> <!--Unordered List-->
-                <li><!--List Item--> This is a Flex Box page <a href="../index.html">Click Here To Return</a></li>
-            </ul>
-        </section>
-    <div class="header"><header>3-Column Flexbox</header></div>
-    <div class="menu"><nav>Navigation</nav></div>
-    <div class="main">
-        <section><article>This is a secton and article.</article></section>
-        <section><article><p>This is a paragraph tag inside a section-article</p></article></section>
-    </div>
-    <div class="aside">
-        <aside><br><br><br><br><br><br>
-            This is the aside space.
-        </aside>
-    </div>
-</body>
+            <nav class="navbar">
+                <div id="menu" class="menu">
+                    <a class="sitename" href="../index.html">Home</a>
+                    <a class="show" href="#menu">Menu</a>
+                    <a class="hide" href="#hidemenu">Menu</a>
+                    <ul class="menu-items">
+                        <li><a href="../childPages/childTemplate.html">Templates</a></li>
+                        <li><a href="Flex Box.html">FlexBox</a></li>
+                        <li><a href="../childPages/Headings and Paragraph Tags with viewport.html">H/P(With VP)</a></li>
+                        <li><a href="../childPages/Headings and Paragraph Tags no viewport.html">H/P(No VP)</a></li>
+                        <li><a href="../childPages/Image Lesson.html">Image</a></li>
+                        <li><a href="../childPages/Index with DIVs.html">Divs</a></li>
+                        <li><a href="../childPages/Subs and Superscript.html">Subs/Superscripts</a></li>
+                    </ul>
+                </div>
+            </nav>
 
-<footer>
-    <blockquote cite="https://i.kym-cdn.com/photos/images/newsfeed/001/884/907/c86.jpg">
-        <!-- Date Accessed - 20220706-->
-    </blockquote>
-    <strong>"Eating an apple is totally not beyond unimaginably lame." - </strong>
-    <em><a href="https://i.kym-cdn.com/photos/images/newsfeed/001/884/907/c86.jpg" target="_blank">Maxwell Li</a></em>
-    <p> &copy Maxwell Li, powered by SlightlySoggy in GitHub</p>
-</footer>
+            <div class="column1"><header>3-Column Flexbox</header></div>
+            <div class="column2"><section>Hello</section></div>
+            <div class="column3">
+                <section><article>This is a secton and article.</article></section>
+                <section><article><p>This is a paragraph tag inside a section-article</p></article></section>
+            </div>
+            <div class="aside">
+                <aside><br><br><br><br><br><br>
+                    This is the aside space.
+                </aside>
+            </div>
+        </section>
+
+        <section>
+            <ul class="menu-items">
+                <li>This is the flexbox page. Here we practiced using divs and making multiple columns.</li> 
+                <li>Each div is outlined with red with written styling.</li> 
+            </ul>
+        </section>   
+        <aside>
+            <br>
+            <article> Keep on movin! There's more to this website than this.</article>
+            <br>
+        </aside>
+    </body>
+    <div id="footer" class="footer">
+        <section><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" target="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley">"Eating an apple is beyond unimaginably lame." - Maxwell Li</a></section>
+        <p> &copy Maxwell Li, powered by SlightlySoggy in GitHub</p>
+    </div>
 
 </html>

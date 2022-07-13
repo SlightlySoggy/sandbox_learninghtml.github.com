@@ -36,6 +36,10 @@
   display: inline-block;
 }
 
+.bodycontent {
+  display: inline-block;
+}
+
 /*Home Button*/
 .sitename {
   display: inline-block;
